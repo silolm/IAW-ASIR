@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hola Mundo</title>
+</head>
+
+<body>
+
+  <table align="center">
+
+    <thead>
+      <tr>
+        <th>Ordenar números de forma ascendente o descendente</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <form action="ampliacion1_5.php" method="POST">
+        <tr>
+          <td>Ingrese un número: </td>
+          <td><input type="number" name="n1"></td>
+        </tr>
+
+        <tr>
+          <td>Ingrese un número: </td>
+          <td><input type="number" name="n2"></td>
+        </tr>
+
+        <tr>
+          <td>Ingrese un número: </td>
+          <td><input type="number" name="n3"></td>
+        </tr>
+
+        <tr>
+          <td align="right" colspan="2">
+            <select required name="orden">
+              <option value="null" selected>Seleccione un orden</option>
+              <option value="ASC">Ascendente</option>
+              <option value="DESC">Descendente</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" colspan="2"><input type="submit" name="submit" value="Ordenar"></td>
+        </tr>
+      </form>
+
+    </tbody>
+
+  </table>
+
+</body>
+
+</html>
