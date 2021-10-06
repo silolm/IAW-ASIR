@@ -16,11 +16,11 @@
         if ($cont <= 98) echo ($ini += 1) . " - ";
         elseif ($cont = 99) echo $ini += 1;
 
-        $suma = ($ini*($ini+1))/2;
+        $suma = ($ini * ($ini + 1)) / 2;
 
         $cont++;
     }
-    echo '<br>' . $suma;
+    echo '<br><b>' . $suma;
 
     ?>
 </body>

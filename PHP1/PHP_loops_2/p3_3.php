@@ -6,22 +6,33 @@
     <title></title>
 </head>
 
+<h4>En el rango de 0 a 100:</h4>
+
 <body>
     <?php
-    $ini = 0;
+    $sumaI = 0;
+    $contI = 0;
     $suma = 0;
-    $cont = 0;
 
-    while ($cont < 100) {
-        if ($cont <= 98) echo ($ini += 1) . " - ";
-        elseif ($cont = 99) echo $ini += 1;
+    while ($contI < 100) {
+        if (($contI % 2) != 0 && $contI < 99) echo $contI . " - ";
+        elseif (($contI % 2) != 0 && $contI = 99) echo $contI;
 
-        $suma = ($ini*($ini+1))/2;
+        $sumaI = ($contI * ($contI + 1)) / 2;
 
-        $cont++;
+        $contI++;
     }
-    echo '<br>' . $suma;
+    echo '<br><b>' . $sumaI / 2 . '</b>';
+    ?>
+    <br><br>
+    <?php
+    for ($n = 2; $n <= 100; $n += 2) {
+        if ($n <= 98) echo $n . " - ";
+        elseif ($n = 100) echo $n;
 
+        $suma = ($n * ($n + 1)) / 2;
+    }
+    echo '<br><b>' . $suma / 2 . '</b>';
     ?>
 </body>
 
