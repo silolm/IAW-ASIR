@@ -18,6 +18,7 @@ $cont = 0;
             '<td>'
                 . $suma;
             '</td></tr>';
+            $suma += $ini;
             $cont++;
         }
         ?>

@@ -9,10 +9,6 @@
             border-collapse: collapse;
         }
 
-        table thead tr {
-            background-color: #C0C0C0;
-        }
-
         table thead th {
             padding: 5px;
             border: 2px solid #fff;
@@ -46,9 +42,9 @@ $cont = 0;
 <body>
     <table>
         <thead>
-            <tr>
+            
                 <th>Listado de números múltiplos de 5</th>
-            </tr>
+            
         </thead>
         <tbody>
             <?php
