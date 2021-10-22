@@ -1,17 +1,25 @@
 <?php
 include './data.php';
-$persona = [$nombre1, $apellidos1, $edad1, $movil1, $nombre2, $apellidos2, $edad2, $movil2];
-$persona_count = count($persona);
+$persona = array(
+    "Nombre" => $nombre1,
+    "Apellidos" => $apellidos1,
+    "Edad" => $edad1,
+    "Móvil" => $movil1,
+    "_Nombre" => $nombre2,
+    "_Apellidos" => $apellidos2,
+    "_Edad" => $edad2,
+    "_Móvil" => $movil2
+);
 ?>
 <table class="tftable" border="1">
     <thead>
-        <th colspan="2">Datos persona 1</th>
+        <th colspan="2">Datos personales</th>
     </thead>
     </tr>
     <?php
 
-    for ($i = 0; $i < $persona_count; $i++) {
-        echo '<tr><td>' . $persona[$i] . '</td></tr>';
+    foreach ($persona as $key => $value) {
+        echo '<tr><td><b>' . $key . '</b></td><td>' . $value . '</td></tr>';
     }
 
     ?>
