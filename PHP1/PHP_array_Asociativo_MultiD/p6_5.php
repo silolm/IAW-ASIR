@@ -14,18 +14,23 @@ for ($x = 0; $x < count($tresXtres); $x++) {
         echo $tresXtres[$x][$y] . '<br>';
     }
 }
+?>
+<br>
+<?php
 
 $dosXtres = array(
     array("a", "b", "c"),
     array("d", "e", "f")
 );
 
-$x = 0;
-$y = 0;
-while ($x < count($dosXtres)); {
-    while ($y < count($dosXtres)); {
+$x=0;
+$y=0;
+
+while ($x < count($dosXtres)) {
+    while ($y < max(array_map('count', $dosXtres))) {
         echo $dosXtres[$x][$y] . '<br>';
         $y++;
     }
+    $y=0;
     $x++;
 }
