@@ -1,8 +1,8 @@
 <?php
 function media($sumando1, $sumando2){
     return ($sumando1 + $sumando2) / 2;
-    
 }
+
 $a = 651;
 $b = 256;
 

@@ -13,7 +13,6 @@ function arrayTable()
 
     for ($i = 0; $i < $numArgs; $i++) {
         echo '<tr style= "text-align:center;"><td>' . $i . '</td><td>' . $arg_list[$i] . '</td></tr>';
-        
     }
     echo '</table>';
 }
